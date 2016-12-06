@@ -5,9 +5,24 @@ zarfy - a graphical front end to RandR >=1.2
 Written by Jim Allingham <supergring0@yahoo.com>
 zarfy is Software Libre released under version 3 of the GPL.
 
+NOTE
+====
+
+This code started as a snapshot of the original zarfy code (zarfy-0.1.0)
+from https://sourceforge.net/projects/zarfy.
 
 INSTALLATION
 ============
+
+From git:
+
+After initial checkout you need to initialize the autoconf/automake
+toolchain. The easiest way to do this is:
+
+> cd zarfy
+> autoreconf -fvi
+
+The proceed with the instructions to build from a tarball.
 
 To install from tarball:
 
@@ -69,7 +84,7 @@ test -f /usr/share/acpi-support/power-funcs || exit 0
 
 if pidof zarfy; then
 	acpi_fakekey $KEY_RIGHT
-else 
+else
  for x in /tmp/.X11-unix/*; do
     displaynum=`echo $x | sed s#/tmp/.X11-unix/X##`
     getXuser;
@@ -108,4 +123,3 @@ how to set up your xorg.conf, etc.
 http://wiki.debian.org/XStrikeForce/HowToRandR12
 http://www.thinkwiki.org/wiki/Xorg_RandR_1.2
 http://www.x.org/wiki/Projects/XRandR
-
