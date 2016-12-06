@@ -12,4 +12,4 @@ zarfy_SOURCES =	callbacks.c \
 				zarfy.h
 
 zarfy_LDFLAGS = -rdynamic
-zarfy_LDADD = @ZARFY_LIBS@
+zarfy_LDADD = @ZARFY_LIBS@ -lm

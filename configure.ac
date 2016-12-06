@@ -14,7 +14,7 @@ AC_PROG_CC
 AC_PROG_INSTALL
 AC_PROG_LN_S
 
-PKG_CHECK_MODULES(ZARFY, [gtk+-2.0, gdk-pixbuf-xlib-2.0, libglade-2.0, xrandr])
+PKG_CHECK_MODULES(ZARFY, [gtk+-2.0, gdk-pixbuf-xlib-2.0, libglade-2.0, xrandr, x11])
 AC_SUBST(ZARFY_CFLAGS)
 AC_SUBST(ZARFY_LIBS)
 
@@ -31,4 +31,3 @@ AC_CHECK_HEADERS(X11/extensions/Xrender.h, [], AC_MSG_ERROR([missing libxrender 
 AC_OUTPUT([Makefile
 src/Makefile
 ])
-
