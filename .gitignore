@@ -1,33 +1,26 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+INSTALL
+Makefile
+Makefile.in
+aclocal.m4
+autom4te.cache/
+compile
+config.h
+config.h.in
+config.h.in~
+config.log
+config.status
+configure
+depcomp
+install-sh
+missing
+src/.deps/
+src/Makefile
+src/Makefile.in
+src/callbacks.o
+src/config.o
+src/draw.o
+src/sw_mode.o
+src/xrr.o
+src/zarfy.o
+stamp-h1
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
